@@ -1,0 +1,17 @@
+$font:(
+    'main': ("DM Sans", sans-serif)
+);
+$colors:(
+    'main': #fff,
+    'secondary': #FFF5F6,
+    'pink-font': #FFA5BA,
+    'accent': #D41443
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@function getFont($key) {
+    @return map-get($font, $key);
+}
