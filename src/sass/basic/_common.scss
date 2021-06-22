@@ -1,0 +1,48 @@
+body {
+    position: relative;
+    font-family: $main-font, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.2;
+      
+    color: getColor("primary-text");
+      
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  input, 
+  textarea {outline:none;}
+
+  input:active, 
+  textarea:active {outline:none;}
+  :focus {outline:none;}
+  
+  textarea {resize:none;}
+  textarea {resize:vertical;}
+  textarea {resize:horizontal;}
+
+  form {
+    z-index: 10000;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

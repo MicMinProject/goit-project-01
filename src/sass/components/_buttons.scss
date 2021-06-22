@@ -1,0 +1,132 @@
+.menu-container__button {
+    @extend %button;
+    height: 44px;
+    width: 209px;
+
+    margin-top: 60px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: getColor("accent");
+    background-color: getColor("main");
+
+    border: 1px solid getColor("main");
+    
+    @include transform(color);
+    @include transform(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: getColor("accent");
+        color: getColor("main");
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+
+    &--accessory {
+        margin-left: 21px;
+
+        stroke: getColor("accent");
+
+        @include transform(stroke);
+
+        &:hover,
+        &:focus {
+            stroke: getColor("main");
+        }
+    }
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &.tablet-desktop {
+        @media screen and (max-width: calc(#{$tablet} - 1px)) {
+            display: none;
+        }
+        
+        @media screen and (min-width: $tablet) {
+            position: absolute;
+            display: inline-block;
+            width: 160px;
+            z-index: 1;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            right: 34px;
+            top: -20px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            position: relative;
+            margin-left: 110px;
+            margin-top: 0px;
+        }
+    }
+}
+
+.menu-button {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    z-index: 100000000;
+
+
+    &:hover {
+        fill: getColor("accent");
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 52px;
+        right: 224px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+
+    & .icon-cross {
+        display: none;
+    }
+
+    &.is-open .icon-cross {
+        display: block;
+    }
+
+    &.is-open .icon-menu {
+        display: none;
+    }
+}
+
+.hero-container__button {
+    @extend %button; 
+    font-size: 8px;
+    line-height: 1.25;
+    padding: 7px 15px;
+    z-index: 10;
+
+    color: getColor("accent");
+    background-color: getColor("main");
+
+    @include transform(color);
+    @include transform(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: getColor("accent");
+        color: getColor("main");
+    }
+        
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        padding: 13px 24px;
+    }
+}

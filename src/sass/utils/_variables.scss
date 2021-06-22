@@ -1,0 +1,26 @@
+$main-font: DM Sans;
+$title-font: Titan One;
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+$font:(
+    'main': ("DM Sans", sans-serif),
+    'title': ("Titan One"),
+);
+
+$colors:(
+    'main': #fff,
+    'secondary': #FFF5F6,
+    'pink-font': #FFA5BA,
+    'accent': #D41443,
+    'primary-bg': #FFB8CA,
+    'menu-bg': #E17992,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@function getFont($key) {
+    @return map-get($font, $key);
+}
