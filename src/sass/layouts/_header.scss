@@ -1,72 +1,32 @@
 .page-header {
-    @extend %container;
-    padding-top: 6px;
-    background-color: getColor("primary-bg");
+  @extend %container;
+  padding-top: 6px;
+  background-color: getColor("primary-bg");
 
-    z-index: 100000000;
+  z-index: 100000000;
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 36px;
-    }    
+  @media screen and (min-width: $tablet) {
+      padding-top: 36px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        height: 665px;
-    }
+  @media screen and (min-width: $desktop) {
+      height: 665px;
+  }
 
-    &__logo {
-        @media screen and (min-width: $desktop) {
-            margin-right: 110px;
-        }
-    }
-}
-
-.menu-button {
-    position: absolute;
-    top: 19px;
-    right: 20px;
-
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-
-    z-index: 100000000;
-
-
-    &:hover {
-        fill: getColor("accent");
-    }
-
-    @media screen and (min-width: $tablet) {
-        top: 52px;
-        right: 224px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      display: none;
-    }
-
-    & .icon-cross {
-        display: none;
-    }
-
-    &.is-open .icon-cross {
-        display: block;
-    }
-
-    &.is-open .icon-menu {
-        display: none;
-    }
+  &__logo {
+      @media screen and (min-width: $desktop) {
+          margin-right: 110px;
+      }
+  }
 }
 
 .site-nav {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        height: 50px;
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      height: 50px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: center;
-    }
+  @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+  }
 }

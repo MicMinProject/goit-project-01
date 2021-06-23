@@ -1,115 +1,159 @@
+<head>
+  <link rel="shortcut icon" type="image/png" href="./images/website-icon.png"/>
+</head>
 <body>
-    <header class="page-header">
-        <div class="page-header__container">
-            <nav class="site-nav">
-                <a href="./team-project.html" class="page-header__logo">
-                    <img
-                    srcset="./images/logo/logo.png  200w,
-                    ./images/logo/logo2x.png  400w,
-                    "
-                    src="./images/logo/logo.png"
-                    alt="company-logo"
-                    width="200px"
-                    height="50px"
-                    sizes="100vw" />
-                </a>
-                <button
-                    type="button"
-                    class="menu-button"
-                    aria-expanded="false"
-                    aria-controls="menu-container"
-                    data-menu-button
-                >
-                    <svg
-                    width="20"
-                    height="20"
-                    aria-label="mobile-menu switcher"
-                    >
-                    <use class="icon-cross" href="./images//menu/symbol-defs.svg#icon-close"></use>
-                    <use class="icon-menu" href="./images/menu/symbol-defs.svg#icon-burger"></use>
-                    </svg>
-                </button>
-                <div class="menu-container">
-                    <div class="menu-container__animation">
-                        <button type="submit" class="menu-container__button">
-                            Buy now
-                            <svg width="5.2px" height="8px" class="menu-container__button--accessory">
-                                <use href="./images/menu/symbol-defs.svg#icon-vector"></use>
-                            </svg>
-                        </button>
-                        <ul class="menu-container__pages">
-                            <li class="menu-container__element"><a href="team-project.html" class="menu-container__link">Home</a></li>
-                            <li class="menu-container__element"><a href="#" class="menu-container__link">About us</a></li>
-                            <li class="menu-container__element"><a href="#How it's made" class="menu-container__link">How it's made?</a></li>
-                            <li class="menu-container__element"><a href="#Our products" class="menu-container__link">Our products</a></li>
-                            <li class="menu-container__element"><a href="#Contact" class="menu-container__link">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <button type="submit" class="menu-container__button tablet-desktop">
-                    Buy now
-                    <svg width="5.2px" height="8px" class="menu-container__button--accessory">
-                        <use href="./images/menu/symbol-defs.svg#icon-vector"></use>
-                    </svg>
-                </button>
-            </nav>
-        </div>
-        <div class="hero-container">
-            <div class="hero-container__naming">
-                <h1 class="hero-container__title">ice cream made with <span class="hero-container__title--accent">passion</span></h1>
-                <a href="Products" class="hero-container__button">Products</a>
-                <a href="How it's made" class="hero-container__button">How it's made?</a>
-            </div>
-            <span class="hero-container__bg"></span>
-            <span class="hero-container__svg"></span>
-            <div class="hero-container__number-images">
-                <img
-                srcset="./images/ice-cream/ice-cream-cafe.png  43w,
-                ./images/ice-cream/ice-cream-cafe2x.png  86w,
-                "
-                width="43"
-                height="44"
-                alt="cafe-number"
-                sizes="100vw"
-                src="./images/ice-cream/ice-cream-cafe.png" class="number-image__element_1">
+  <header class="page-header">
+      <div class="page-header__container">
+          <nav class="site-nav">
+              <a href="./header.html" class="page-header__logo">
+                  <img
+                  srcset="./images/logo/logo.png  200w,
+                  ./images/logo/logo2x.png  400w,
+                  "
+                  src="./images/logo/logo.png"
+                  alt="company-logo"
+                  width="200px"
+                  height="50px"
+                  sizes="100vw" />
+              </a>
+              <button
+                  type="button"
+                  class="menu-button"
+                  aria-expanded="false"
+                  aria-controls="menu-container"
+                  data-menu-button
+              >
+                  <svg
+                  width="20"
+                  height="20"
+                  aria-label="mobile-menu switcher"
+                  >
+                  <use class="icon-cross" href="./images//menu/symbol-defs.svg#icon-close"></use>
+                  <use class="icon-menu" href="./images/menu/symbol-defs.svg#icon-burger"></use>
+                  </svg>
+              </button>
+              <div class="menu-container">
+                  <div class="menu-container__animation">
+                      <button type="submit" class="menu-container__button" data-open-modal>
+                          Buy now
+                          <svg width="5.2px" height="8px" class="menu-container__button--accessory">
+                              <use href="./images/menu/symbol-defs.svg#icon-vector"></use>
+                          </svg>
+                      </button>
+                      <div class="backdrop is-hidden" data-backdrop>
+                          <div class="form">
+                              <button type="button" class="form__close-button" data-close-modal="">
+                                  <svg width="15px" height="15px">
+                                      <use href="./images/menu/symbol-defs.svg#icon-close"></use>
+                                  </svg>
+                              </button>
+                              <div>
+                                  <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
+                                  <form name="signup_form" autocomplete="on" novalidate>
+                                      <label class="form__field">
+                                          <input type="text" class="form__input" name="name" placeholder="" />
+                                          <span class="form__label">Imie</span>
+                                      </label>
+                                      <label class="form__field">
+                                          <input type="tel" class="form__input" name="tel" placeholder=" " />
+                                          <span class="form__label" >Telefon</span>
+                                      </label>
+                                      <label class="form__field">
+                                          <input type="email" class="form__input" name="email" placeholder=" " />
+                                          <span class="form__label">Email</span>
+                                      </label>
+                                      <label for="comment" class="comment">
+                                          <textarea class="comment__input" name="comment" rows="8" placeholder="Wprowadź tekst"></textarea>
+                                          <span class="comment__label">Komentarz</span>
+                                      </label>
+                                      <!-- <label class="checkbox">
+                                          <input type="checkbox" name="conditions" value="policy" class="checkbox__visually-hidden">
+                                          <svg width="16px" height="15px" class="checkbox__icon">
+                                              <use href="./images/icons.svg/symbol-defs.svg#icon-checkbox"></use>
+                                          </svg>
+                                          <span class="checkbox__label">Oświadczam iż akceptuję <a href="" class="checkbox__link">Regulamin</a> i <a href="" class="checkbox__link">Politykę Prywatności.</a></span>
+                                      </label> -->
+                                  </form>
+                                  <button type="submit" class="form__submit" data-close-modal="">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+                      <ul class="menu-container__pages">
+                          <li class="menu-container__element"><a href="team-project.html" class="menu-container__link">Home</a></li>
+                          <li class="menu-container__element"><a href="#" class="menu-container__link">About us</a></li>
+                          <li class="menu-container__element"><a href="#How it's made" class="menu-container__link">How it's made?</a></li>
+                          <li class="menu-container__element"><a href="#Our products" class="menu-container__link">Our products</a></li>
+                          <li class="menu-container__element"><a href="#Contact" class="menu-container__link">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <button type="submit" class="menu-container__button tablet"
+              aria-expanded="false"
+              aria-controls="modal-container">
+                  Buy now
+                  <svg width="5.2px" height="8px" class="menu-container__button--accessory">
+                      <use href="./images/menu/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+              </button>
+          </nav>
+      </div>
+      <div class="hero-container">
+          <div class="hero-container__naming">
+              <h1 class="hero-container__title">ice cream made with <span class="hero-container__title--accent">passion</span></h1>
+              <a href="Products" class="hero-container__button">Products</a>
+              <a href="How it's made" class="hero-container__button-2">How it's made?</a>
+          </div>
+          <span class="hero-container__bg"></span>
+          <span class="hero-container__svg"></span>
+          <div class="hero-container__number-images">
+              <img
+              srcset="./images/ice-cream/ice-cream-cafe.png  43w,
+              ./images/ice-cream/ice-cream-cafe2x.png  86w,
+              "
+              width="43"
+              height="44"
+              alt="cafe-number"
+              sizes="100vw"
+              src="./images/ice-cream/ice-cream-cafe.png" class="number-image__element_1">
 
-                <img
-                srcset="./images/ice-cream/ice-cream-truck.png  53w,
-                ./images/ice-cream/ice-cream-truck2x.png  106w,
-                "
-                width="53"
-                height="43"
-                alt="trucks-number"
-                sizes="100vw"
-                src="./images/ice-cream/ice-cream-truck.png" class="number-image__element_2">
-            </div>
-            <img
-            srcset="./images/ice-cream/ice-cream-lady.png  168w,
-            ./images/ice-cream/ice-cream-lady2x.png  336w,
-            "
-            width="168"
-            height="133"
-            alt="lady with ice-cream"
-            sizes="100vw"
-            src="images/ice-cream/ice-cream-lady.png" width="168" height="133" class="hero-container__lady-picture">
-            <div class="hero-container__description">
-                <img
-                srcset="./images/ice-cream/ice-cream-milk.png  124w,
-                ./images/ice-cream/ice-cream-milkX2.png  248w,
-                "
-                width="124"
-                height="126"
-                alt="milk in caraffe"
-                sizes="100vw"
-                src="images/ice-cream/ice-cream-milk.png" class="hero-container__description-picture">
-                <div class="hero-container__description-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <svg class="hero-container__description-svg">
-                        <use href="./images/menu/symbol-defs.svg#arrow-right"></use>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </header>
-    <script src="./js/mobile-menu.js"></script>
+              <img
+              srcset="./images/ice-cream/ice-cream-truck.png  53w,
+              ./images/ice-cream/ice-cream-truck2x.png  106w,
+              "
+              width="53"
+              height="43"
+              alt="trucks-number"
+              sizes="100vw"
+              src="./images/ice-cream/ice-cream-truck.png" class="number-image__element_2">
+          </div>
+          <img
+          srcset="./images/ice-cream/ice-cream-lady.png  168w,
+          ./images/ice-cream/ice-cream-lady2x.png  336w,
+          "
+          width="168"
+          height="133"
+          alt="lady with ice-cream"
+          sizes="100vw"
+          src="images/ice-cream/ice-cream-lady.png" width="168" height="133" class="hero-container__lady-picture">
+          <div class="hero-container__description">
+              <img
+              srcset="./images/ice-cream/ice-cream-milk.png  124w,
+              ./images/ice-cream/ice-cream-milkX2.png  248w,
+              "
+              width="124"
+              height="126"
+              alt="milk in caraffe"
+              sizes="100vw"
+              src="images/ice-cream/ice-cream-milk.png" class="hero-container__description-picture">
+              <div class="hero-container__description-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                  <svg class="hero-container__description-svg">
+                      <use href="./images/menu/symbol-defs.svg#arrow-right"></use>
+                  </svg>
+              </div>
+          </div>
+      </div>
+  </header>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 </body>

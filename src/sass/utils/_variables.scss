@@ -9,8 +9,8 @@ $colors:(
     'secondary': #FFF5F6,
     'pink-font': #FFA5BA,
     'accent': #D41443,
-    'menu-bg': #E17992,
-    'primary-bg': #FFB8CA
+    'primary-bg': #FFB8CA,
+    'menu-bg': #E17992
 );
 
 @function getColor($key) {
