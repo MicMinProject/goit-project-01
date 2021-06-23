@@ -1,41 +1,18 @@
-body {
+
       
-  a {
-    text-decoration: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    list-style: none;
-  }
 
-  input, 
-  textarea {outline:none;}
 
-  input:active, 
-  textarea:active {outline:none;}
-  :focus {outline:none;}
-  
-  textarea {resize:none;}
-  textarea {resize:vertical;}
-  textarea {resize:horizontal;}
+input, 
+textarea {outline:none;}
 
-  form {
-    z-index: 10000;
-  }
-}
+input:active, 
+textarea:active {outline:none;}
+:focus {outline:none;}
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+form {
+z-index: 10000;
 }
