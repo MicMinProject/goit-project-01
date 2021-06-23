@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"],"./../images/placement/placement-bg.png":[["placement-bg.fba54d96.png","hWPt"],"hWPt"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-project-01/src.5f0d4f65.js.map
+//# sourceMappingURL=/goit-project-01/src.6a1d1cd8.js.map
