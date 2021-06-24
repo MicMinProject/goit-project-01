@@ -2,7 +2,7 @@
     margin-bottom: 170px;
     &__view {
         display: flex;
-        overflow: hidden;
+        overflow: auto;
         width: 280px;
     }
     &__card-home,
@@ -11,6 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
     &__image {
         margin-bottom: 29px;
@@ -118,6 +119,7 @@
         margin-bottom: 197px;
         &__view {
             width: 620px;
+            margin-left: 40px;
         }
         &__image {
             margin-bottom: 19px;
@@ -154,6 +156,7 @@
         margin-bottom: 234px;
         &__view {
             width: 926px;
+            margin-left: 91px;
         }
         &__image {
             margin-bottom: 15px;

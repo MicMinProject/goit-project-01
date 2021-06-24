@@ -124,13 +124,13 @@
       background-image:
        url(../images/how-its-made/mobile/him-images-364.png),
        linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
-       background-size: cover;
+       background-size: contain;
        background-repeat: no-repeat;
        min-height: 122px;
-       width: 320px;
+       width: 280px;
        display: block;
        position: absolute;
-       bottom: -61px;
+       bottom: -79px;
        left:50%;
        transform: translateX(-50%);
     }
@@ -276,7 +276,7 @@
        display: block;
        position: absolute;
        bottom: -158px;
-       left:50%;
+       left: 50%;
        transform: translateX(-50%);
     }
   }
@@ -423,13 +423,13 @@
       background-image:
        url(../images/how-its-made/desktop/him-images-1280.png),
        linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
-       background-size: cover;
+       background-size: contain;
        background-repeat: no-repeat;
        min-height: 430px;
        width: 1200px;
        display: block;
        position: absolute;
-       bottom: -259px;
+       bottom: -270px;
        left:50%;
        transform: translateX(-50%);
     }
