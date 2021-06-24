@@ -1,3 +1,6 @@
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
 $font:(
     'main': ("DM Sans", sans-serif)
 );
@@ -6,8 +9,8 @@ $colors:(
     'secondary': #FFF5F6,
     'pink-font': #FFA5BA,
     'accent': #D41443,
-    'menu-bg': #E17992,
-    'primary-bg': #FFB8CA
+    'primary-bg': #FFB8CA,
+    'menu-bg': #E17992
 );
 
 @function getColor($key) {
