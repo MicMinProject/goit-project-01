@@ -1,0 +1,32 @@
+.page-header {
+  @extend %container;
+  padding-top: 6px;
+  background-color: getColor("primary-bg");
+
+  z-index: 100000000;
+
+  @media screen and (min-width: $tablet) {
+      padding-top: 36px;
+  }
+
+  @media screen and (min-width: $desktop) {
+      height: 665px;
+  }
+
+  &__logo {
+      @media screen and (min-width: $desktop) {
+          margin-right: 110px;
+      }
+  }
+}
+
+.site-nav {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      height: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+  }
+}
