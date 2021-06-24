@@ -84,10 +84,10 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
     padding: 0 46px;
-    width: 1200px;
+    width: 1280px;
   }
 }
 .label {
@@ -229,7 +229,7 @@ img {
     margin: 0 40px 30px 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .products--margin {
     margin-bottom: 150px;
   }
@@ -276,7 +276,7 @@ img {
     margin: 0 11px 40px 11px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products--margin {
     margin-bottom: 259px;
   }
