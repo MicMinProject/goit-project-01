@@ -1,0 +1,445 @@
+@media screen and (max-width: 767px) {
+    .how-its-made {
+      background-image: url(../images/how-its-made/mobile/background_milk.png);
+      background-position-y: 49.1%;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      padding-top: 125px;
+      padding-bottom: 145px;
+      margin: 0 auto;
+      background-color: #fff5f6;
+      position: relative;
+      margin-bottom: 154px;
+    
+    &__title-first {
+      margin: 0;
+      margin-bottom: 15px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.17;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffa5ba;
+    }
+    &__title-second {
+      margin: 0;
+      margin-bottom: 26px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__btn {
+      display: inline-block;
+      margin-bottom: 39px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 37px;
+      padding-left: 37px;
+      min-width: 176px;
+      background: getColor('main');
+      border-radius: 22px;
+      border: 0;
+  
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.28;
+      color: #d41443;
+  
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
+    &__main-image {
+      width: 280px;
+      height: 279px;
+    }
+    &__text-first {
+      margin: 0;
+      margin-bottom: 32px;
+      width: 220px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.58;
+      color: #000000;
+    }
+    &__text-second {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.58;
+      color: #907e82;
+      width: 220px;
+    }
+    &__pic {
+      margin-top: 20px;
+      margin-bottom: 21px;
+    }
+    &__milk {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__number {
+      margin: 0;
+      margin-bottom: 21px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__text {
+      margin: 0;
+      width: 230px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.67;
+      color: #000000;
+    }
+    &__item-pic {
+      margin-bottom: 16px;
+    }
+    &__cards {
+      padding-top: 0;
+      padding-bottom: 0;
+  
+      &:not(:last-child) {
+        margin-bottom: 38px;
+      }
+    }
+    &__gallery {
+      background-image:
+       url(../images/how-its-made/mobile/him-images-364.png),
+       linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+       background-size: cover;
+       background-repeat: no-repeat;
+       min-height: 122px;
+       width: 320px;
+       display: block;
+       position: absolute;
+       bottom: -61px;
+       left:50%;
+       transform: translateX(-50%);
+    }
+  }
+    @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .how-its-made__gallery {
+        background-image:
+         url(../images/how-its-made/mobile/him-images-728@2x.png),
+         linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+        }
+      }
+  }
+  //tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-its-made {
+      padding-top: 130px;
+      padding-bottom: 246px;
+      background-color: #fff5f6;
+      margin-bottom: 279px;
+      position: relative;
+    
+    &__main-image {
+      width: 340px;
+      height: 339px;
+    }
+    &__title-first {
+      margin: 0;
+      margin-bottom: 16px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.15;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffa5ba;
+    }
+    &__title-second {
+      margin: 0;
+      margin-bottom: 50px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__btn {
+      display: inline-block;
+      margin-bottom: 66px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 37px;
+      padding-left: 37px;
+      min-width: 176px;
+      background: #ffffff;
+      border-radius: 22px;
+      border: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.28;
+      color: #d41443;
+  
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
+   
+    &__text-first {
+      margin: 0;
+      margin-bottom: 31px;
+      width: 330px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.78;
+      color: #000000;
+    }
+    &__text-second {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.78;
+      letter-spacing: 0.04em;
+      color: #907e82;
+      width: 340px;
+    }
+    &__how {
+      display: flex;
+    }
+    &__milk {
+      margin: 0;
+      margin-top: 50px;
+    }
+    &__title-image {
+      margin: 0;
+      margin-right: 17px;
+    }
+    &__pic {
+      margin-top: 18px;
+      margin-bottom: 61px;
+    }
+    &__number {
+      margin: 0;
+      margin-bottom: 13px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__text {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.71;
+      color: #000000;
+    }
+    &__item-pic {
+      margin-bottom: 36px;
+    }
+    &__card-set {
+      display: flex;
+    }
+    &__cards:not(:last-child) {
+      margin-right: 60px;
+    }
+    &__gallery {
+      background-image:
+       url(../images/how-its-made/tablet/him-images-786.png),
+       linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+       background-size: cover;
+       background-repeat: no-repeat;
+       min-height: 264px;
+       width: 786px;
+       display: block;
+       position: absolute;
+       bottom: -158px;
+       left:50%;
+       transform: translateX(-50%);
+    }
+  }
+    @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .how-its-made__gallery {
+        background-image:
+         url(../images/how-its-made/tablet/him-images-1572@2x.png),
+         linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+        }
+      }
+    
+  }
+  //desktop
+  @media screen and (min-width: 1200px) {
+    .how-its-made {
+      background-image: url(../images/how-its-made/desktop/background_milk.png);
+      background-repeat: no-repeat;
+      background-position-y: 50.1%;
+      background-position-x: center;
+      background-size: 100%;
+      padding-top: 125px;
+      padding-bottom: 310px;
+      background-color: #fff5f6;
+      position: relative;
+      margin-bottom: 382px;
+    
+    &__main-image {
+      width: 516px;
+      height: 516px;
+    }
+    &__title-first {
+      margin: 0;
+      margin-bottom: 15px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.13;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffa5ba;
+    }
+    &__title-second {
+      margin: 0;
+      margin-bottom: 100px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__btn {
+      display: inline-block;
+      margin-bottom: 146px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-right: 37px;
+      padding-left: 37px;
+      min-width: 176px;
+      background: #ffffff;
+      border-radius: 22px;
+      border: 0;
+  
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.28;
+      text-align: center;
+      color: #d41443;
+  
+      &:hover,
+      &:focus {
+        background-color: #ecebeb;
+      }
+    }
+    &__text-first {
+      margin: 0;
+      margin-bottom: 35px;
+      width: 463px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+      color: #000000;
+    }
+    &__text-second {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.78;
+      letter-spacing: 0.04em;
+      color: #907e82;
+      width: 463px;
+    }
+    &__how {
+      display: flex;
+    }
+    &__milk {
+      margin: 0;
+      margin-top: 50px;
+    }
+    &__title-image {
+      margin: 0;
+      margin-right: 74px;
+    }
+    &__pic {
+      margin-top: 37px;
+      margin-bottom: 45px;
+    }
+    &__number {
+      margin: 0;
+      margin-bottom: 24px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d41443;
+    }
+    &__text {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+    &__item-pic {
+      margin-bottom: 40px;
+    }
+    &__card-set {
+      display: flex;
+    }
+    &__cards:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__gallery {
+      background-image:
+       url(../images/how-its-made/desktop/him-images-1280.png),
+       linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+       background-size: cover;
+       background-repeat: no-repeat;
+       min-height: 430px;
+       width: 1200px;
+       display: block;
+       position: absolute;
+       bottom: -259px;
+       left:50%;
+       transform: translateX(-50%);
+    }
+  }
+    @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .how-its-made__gallery {
+        background-image:
+         url(../images/how-its-made/desktop/him-images-2560@2x.png),
+         linear-gradient(to bottom, #FFF5F6 50%, #fff 50%);
+        }
+      }
+  }
+  
