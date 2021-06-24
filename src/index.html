@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
+    <title>Nagłówek strony</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/example.html"></include>
 
     <!-- SECTION HEADER -->
-
+    <include src="./partials/header.html"></include>
     <!-- END SECTION HEADER -->
-    
+    <main>
     <!-- SECTION PRODUCTS -->
     <include src="./partials/products.html"></include>
     <!-- END SECTION PRODUCTS -->
@@ -36,11 +34,11 @@
     <!-- SECTION PLACEMENT -->
     <include src="./partials/placement.html"></include>
     <!-- END SECTION PLACEMENT -->
-    
+    </main>
     <!-- SECTION FOOTER -->
-    <include src="./partials/footer.html"></include>
-    <!-- END SECTION FOOTER -->
 
+    <!-- END SECTION FOOTER -->
+    <include src="./partials/footer.html"></include>
     <!-- SECTION MENU -->
 
     <!-- END SECTION MENU -->

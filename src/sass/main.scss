@@ -1,10 +1,8 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-// Style dla pliku z przykładem HTML fragmentu
 @import './example';
+
+@import "./utils/breaking-points";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
 @import './utils/hidden';
 @import './utils/variables';
@@ -13,10 +11,14 @@
 @import './basic/common';
 @import './basic/container';
 
+@import './components/buttons';
+@import './components/modal';
+
 @import './layouts/header';
+@import "./layouts/page-hero";
 @import './layouts/products';
 @import './layouts/how-its-made';
 @import './layouts/comments';
 @import './layouts/placement';
 @import './layouts/footer';
-@import './layouts/menu';
+@import "./layouts/menu";
