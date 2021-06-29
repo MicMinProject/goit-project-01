@@ -218,61 +218,66 @@
 }
 @media screen and (min-width: 1200px) {
     .placement {
-        // background-image: url(../../images/placement/placement-bg.png);
-        // background-size: contain;
-        // background-repeat: no-repeat;
+        background-image: url(../images/placement/placement-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         
         height: 765px;
-         &__list {
-             top: -102px;
-             width: 1050px;
-         }
-         &__item {
-             padding: 51px 44px 62px 43px;
-             min-width: 330px;
-         }
-         &__place {
-             margin-bottom: 32px;
-         }
-         &__cafe {
-             margin-bottom: 32px;
-         }
-         &__foodtruck {
-             margin-bottom: 32px;
-         }
-         &__days,
-         &__city {
-             font-size: 16px;
-             height: 30px;
-         }
-         &__description {
-             font-size: 16px;
-             line-height: 183%;
-             width: 243px;
-             max-height: 50px;
-             margin-bottom: 32px;
-             margin-top: 10px;
-         }
-         &__schedule {
-             padding-bottom: 16px;
-             margin-bottom: 32px;
-         }
-         &__hours {
-             font-size: 16px;
-             height: 30px;
-         }
-         &__phone-mail {
-             height: 50px;
-         }
-         &__link {
+        &__list {
+            top: -102px;
+            width: 1050px;
+        }
+        &__item {
+            padding: 51px 44px 62px 43px;
+            min-width: 330px;
+        }
+        &__place {
+            margin-bottom: 32px;
+        }
+        &__cafe {
+            margin-bottom: 32px;
+        }
+        &__foodtruck {
+            margin-bottom: 32px;
+        }
+        &__days,
+        &__city {
             font-size: 16px;
-         }
-         &__button-locations {
-             width: 198px;
-             margin-right: 15px;
-         }
-         &__button-franchise {
-             width: 180px;
-         }
-     }
+            height: 30px;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 183%;
+            width: 243px;
+            max-height: 50px;
+            margin-bottom: 32px;
+            margin-top: 10px;
+        }
+        &__schedule {
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+        }
+        &__hours {
+            font-size: 16px;
+            height: 30px;
+        }
+        &__phone-mail {
+            height: 50px;
+        }
+        &__link {
+        font-size: 16px;
+        }
+        &__button-locations {
+            width: 198px;
+            margin-right: 15px;
+        }
+        &__button-franchise {
+            width: 180px;
+        }
+    }
+    @media (min-device-pixel-ratio), (-webkit-min-device-pixel-ratio), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .placement {
+            background-image: url(../images/placement/placement-bg@2x.png);
+        }
+    }
 }
