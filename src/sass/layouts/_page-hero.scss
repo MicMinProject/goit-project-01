@@ -1,4 +1,5 @@
 .hero-container {
+  @extend %container;
   position: relative;
   background-color: getColor("primary-bg");
   padding-top: 137px;
@@ -66,7 +67,6 @@
   &__bg {
       position: absolute;
       top: 34px;
-      left: 117px;
 
       width: 171px;
       height: 410px;
@@ -79,6 +79,13 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
           background-image: url('../images/ice-cream/ice-cream-picture2x.png');
+      }
+
+      @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
       }
 
       @media screen and (min-width: $tablet) {
@@ -110,6 +117,12 @@
       z-index: -2;
       background-image: url("../images/hero-svg/ellipse.svg");
 
+      @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+
       @media screen and (min-width: $tablet) {
           top: -58px;
           left: 273px;
@@ -136,7 +149,7 @@
 
       @media screen and (min-width: $tablet) {
           position: absolute;
-          right: 0px;
+          right: 34px;
           top: 4px;
       }
 
@@ -153,13 +166,13 @@
 
       @media screen and (min-width: $tablet) {
           position: absolute;
-          right: 0px;
+          right: 34px;
           bottom: 0px;
+          width: 168px;
       }
 
       @media screen and (min-width: $desktop) {
           width: 293px;
-          height: 232px;
       }
   }
 
@@ -169,7 +182,7 @@
       }
 
       position: absolute;
-      left: 0px;
+      left: 34px;
       bottom: 28px;
 
       display: flex;
@@ -228,6 +241,10 @@
   margin-bottom: 13px;
   margin-left: 8px;
 
+  @media screen and (min-width: $tablet) {
+      width: 43px;
+  }
+
   @media screen and (min-width: $desktop) {
       margin-bottom: 15px;
       margin-left: 20px;
@@ -237,8 +254,42 @@
 }
 
 .number-image__element_2 {
-  @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
+        width: 53px;
+    }
+
+    @media screen and (min-width: $desktop) {
       width: 92px;
       height: 76px;
-  }
+    }
+}
+
+.animation-right {
+  transform: translateX(100vw);
+  @include transform(transform);
+}
+
+.animation-center {
+  opacity: 0;
+  @include transform(opacity);
+}
+
+.animation-left {
+  transform: translateX(-100vw);
+  @include transform(transform);
+}
+
+.animation-top {
+  transform: translateY(-100vw);
+  @include transform(transform);
+}
+
+body.loaded .animation-right,
+body.loaded .animation-left,
+body.loaded .animation-top {
+  transform: translateX(0);
+}
+
+body.loaded .animation-center {
+  opacity: 1;
 }

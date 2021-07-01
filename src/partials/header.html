@@ -1,22 +1,21 @@
   <header class="page-header">
-      <div class="page-header__container">
+      <div class="page-header__container animation-top">
           <nav class="site-nav">
               <a href="./index.html" class="page-header__logo">
                   <img
                   srcset="/images/logo/logo2x.png"
                   src="/images/logo/logo.png"
                   alt="company-logo"
-                  width="200px"
-                  height="50px"
-                  sizes="100vw" />
+                  class="page-header__logo-image"/>
               </a>
+              <div>
                 <button
                   type="button"
                   class="menu-button"
                   aria-expanded="false"
                   aria-controls="menu-container"
                   data-menu-button
-              >
+                >
                   <svg
                   width="20"
                   height="20"
@@ -71,16 +70,16 @@
                                   <button type="submit" class="form__submit" data-close-modal="">Submit</button>
                               </div>
                           </div>
-                      </div> 
+                      </div>
                       <ul class="menu-container__pages">
                           <li class="menu-container__element"><a href="./index.html" class="menu-container__link">Home</a></li>
                           <li class="menu-container__element"><a href="#" class="menu-container__link">About us</a></li>
-                          <li class="menu-container__element"><a href="#" class="menu-container__link">How it's made?</a></li>
+                          <li class="menu-container__element"><a href="#how-its-made" class="menu-container__link">How it's made?</a></li>
                           <li class="menu-container__element"><a href="#products" class="menu-container__link">Our products</a></li>
-                          <li class="menu-container__element"><a href="#" class="menu-container__link">Contact</a></li>
-                      <!-- </ul>
+                          <li class="menu-container__element"><a href="#contacts" class="menu-container__link">Contact</a></li>
+                      </ul>
                   </div>
-              </div> -->
+              </div>
               <button type="submit" class="menu-container__button tablet"
               aria-expanded="false"
               aria-controls="modal-container">
@@ -89,17 +88,18 @@
                       <use href="/images/menu/symbol-defs.svg#icon-vector"></use>
                   </svg>
               </button>
+            </div>
           </nav>
       </div>
       <div class="hero-container">
-          <div class="hero-container__naming">
+          <div class="hero-container__naming animation-left">
               <h1 class="hero-container__title">ice cream made with <span class="hero-container__title--accent">passion</span></h1>
               <a href="#" class="hero-container__button">Products</a>
-              <a href="#" class="hero-container__button-2">How it's made?</a>
+              <a href="#how-its-made-main" class="hero-container__button-2">How it's made?</a>
           </div>
-          <span class="hero-container__bg"></span>
-          <span class="hero-container__svg"></span>
-          <div class="hero-container__number-images">
+          <span class="hero-container__bg animation-center"></span>
+          <span class="hero-container__svg animation-center"></span>
+          <div class="hero-container__number-images animation-right">
             <img
               srcset="/images/ice-cream/ice-cream-cafe2x.png"
               width="43"
@@ -122,8 +122,8 @@
           height="133"
           alt="lady with ice-cream"
           sizes="100vw"
-          src="images/ice-cream/ice-cream-lady.png" width="168" height="133" class="hero-container__lady-picture">
-          <div class="hero-container__description">
+          src="images/ice-cream/ice-cream-lady.png" width="168" height="133" class="hero-container__lady-picture animation-right">
+          <div class="hero-container__description animation-left">
               <img
               srcset="/images/ice-cream/ice-cream-milkX2.png"
               width="124"
