@@ -2,8 +2,10 @@ $transition-duration: 250ms;
 $transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 $font:(
-    'main': ("DM Sans", sans-serif)
+    'main': ("DM Sans", sans-serif),
+    'title': ("Titan One", sans-serif)
 );
+
 $colors:(
     'main': #fff,
     'secondary': #FFF5F6,

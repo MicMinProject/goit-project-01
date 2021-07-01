@@ -10,7 +10,7 @@
 
       background-color: rgba(225, 121, 146, 0.6);
 
-      transform: translateX(-100%);
+      transform: translateX(-100vw);
       @include transform(transform);
 
       z-index: 1000000;

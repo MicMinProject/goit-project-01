@@ -1,9 +1,10 @@
 .page-header {
-  @extend %container;
+  width: 100%;
   padding-top: 6px;
   background-color: getColor("primary-bg");
+  overflow-x: clip;
 
-  z-index: 100000000;
+  // z-index: 100000000;
 
   @media screen and (min-width: $tablet) {
       padding-top: 36px;
@@ -13,9 +14,19 @@
       height: 665px;
   }
 
+  &__container {
+    @extend %container;
+    z-index: 10000000;
+  }
+
   &__logo {
       @media screen and (min-width: $desktop) {
           margin-right: 110px;
+      }
+
+      &-image {
+        width: 200px;
+        height: 50px;
       }
   }
 }
@@ -23,6 +34,9 @@
 .site-nav {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
       height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
   }
 
   @media screen and (min-width: $desktop) {
