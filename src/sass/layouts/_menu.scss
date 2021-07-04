@@ -17,6 +17,7 @@
 
       .menu-button.is-open ~ & {
           transform: translateX(0);
+          position: fixed;
       }
 
       &__animation {
