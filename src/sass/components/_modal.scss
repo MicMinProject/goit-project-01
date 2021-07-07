@@ -100,10 +100,12 @@
       width: 100%;
       padding-top: 8px;
       padding-bottom: 8px;
-      padding-left: 20px;
+      padding-left: 40px;
 
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
+
+      color: getColor("accent");
 
       @include transform(border);
 
@@ -114,7 +116,7 @@
 
   &__label {
       position: absolute;
-      left: 0px;
+      left: 10px;
       bottom: 10px;
 
       font-size: 12px;
@@ -126,9 +128,10 @@
       @include transform(color);
       @include transform(transform);
 
-      .form__input:focus ~ & {
+      .form__input:focus ~ &,
+      .form__input:not(:placeholder-shown) ~ & {
           color: getColor("accent");
-          transform: translate(0px, -30px);
+          transform: translate(-10px, -30px);
       }
   }
 
@@ -162,6 +165,23 @@
           transform: translate(1px, 1px);
       }
   }
+
+  &__icon {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+
+    fill: getColor("menu-bg");
+
+    @include transform(fill);
+
+    .form__input:focus + & {
+        fill: getColor("accent");
+    }
+}
 }
 
 /* Comment */

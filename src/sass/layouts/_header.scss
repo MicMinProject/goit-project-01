@@ -1,17 +1,17 @@
 .page-header {
   width: 100%;
   padding-top: 6px;
-  background-color: getColor("primary-bg");
+  background-color: getColor('primary-bg');
   overflow-y: clip;
 
   // z-index: 100000000;
 
   @media screen and (min-width: $tablet) {
-      padding-top: 36px;
+    padding-top: 36px;
   }
 
   @media screen and (min-width: $desktop) {
-      height: 665px;
+    height: 665px;
   }
 
   &__container {
@@ -19,7 +19,7 @@
     z-index: 10000000;
     position: fixed;
     top: 0;
-    background-color: getColor("primary-bg");
+    background-color: getColor('primary-bg');
     padding-top: 6px;
     padding-bottom: 6px;
 
@@ -34,14 +34,14 @@
   }
 
   &__logo {
-      @media screen and (min-width: $desktop) {
-          margin-right: 110px;
-      }
+    @media screen and (min-width: $desktop) {
+      margin-right: 110px;
+    }
 
-      &-image {
-        width: 200px;
-        height: 50px;
-      }
+    &-image {
+      width: 200px;
+      height: 50px;
+    }
   }
 }
 
@@ -50,15 +50,15 @@
   margin-left: auto;
 
   @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: calc(#{$tablet} - 34px*2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(#{$tablet} - 34px * 2);
   }
 
   @media screen and (min-width: $desktop) {
-      @include centeredFlex(flex, center);
-      width: calc(#{$desktop} - 46px*2);
+    @include centeredFlex(flex, center);
+    width: calc(#{$desktop} - 46px * 2);
   }
 }
