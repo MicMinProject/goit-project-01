@@ -1,176 +1,219 @@
-  <header class="page-header">
-      <div class="page-header__container animation-top">
-          <nav class="site-nav">
-              <a href="./index.html" class="page-header__logo">
-                  <img
-                  srcset="/images/logo/logo2x.png"
-                  src="/images/logo/logo.png"
-                  alt="company-logo"
-                  class="page-header__logo-image"/>
-              </a>
-              <div>
-                <button
-                  type="button"
-                  class="menu-button"
-                  aria-expanded="false"
-                  aria-controls="menu-container"
-                  data-menu-button
-                >
-                  <svg
-                  width="20"
-                  height="20"
-                  aria-label="mobile-menu switcher"
-                  >
-                  <use class="icon-cross" href="/images//menu/sprite-header.svg#icon-close"></use>
-                  <use class="icon-menu" href="/images/menu/sprite-header.svg#icon-burger"></use>
-                   </svg>
+<header class="page-header">
+  <div class="page-header__container animation-top">
+    <nav class="site-nav">
+      <a href="./index.html" class="page-header__logo">
+        <img
+          srcset="/images/logo/logo2x.png"
+          src="/images/logo/logo.png"
+          alt="company-logo"
+          class="page-header__logo-image"
+        />
+      </a>
+      <div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="20" height="20" aria-label="mobile-menu switcher">
+            <use class="icon-cross" href="/images//menu/sprite-header.svg#icon-close"></use>
+            <use class="icon-menu" href="/images/menu/sprite-header.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="menu-container">
+          <div class="menu-container__animation">
+            <button type="button" class="menu-container__button" data-open-modal>
+              Buy now
+              <svg width="5.2px" height="8px" class="menu-container__button--accessory">
+                <use href="/images/menu/sprite-header.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <div class="backdrop-modal is-hidden" data-backdrop>
+              <div class="form">
+                <button type="button" class="form__close-button" data-close-modal>
+                  <svg width="15px" height="15px">
+                    <use href="/images/menu/sprite-header.svg#icon-close"></use>
+                  </svg>
                 </button>
-              <div class="menu-container">
-                  <div class="menu-container__animation">
-                      <button type="button" class="menu-container__button" data-open-modal>
-                        Buy now
-                        <svg width="5.2px" height="8px" class="menu-container__button--accessory">
-                            <use href="/images/menu/sprite-header.svg#icon-vector"></use>
-                        </svg>
-                      </button>
-                      <div class="backdrop-modal is-hidden" data-backdrop>
-                          <div class="form">
-                              <button type="button" class="form__close-button" data-close-modal>
-                                  <svg width="15px" height="15px">
-                                      <use href="/images/menu/sprite-header.svg#icon-close"></use>
-                                  </svg>
-                              </button>
-                              <div>
-                                  <h2 class="form__title">Leave your data in form</h2>
-                                  <form name="signup_form" autocomplete="on" novalidate>
-                                      <label class="form__field">
-                                          <input
-                                          type="text"
-                                          class="form__input"
-                                          name="name"
-                                          placeholder=" "
-                                          required minlength="3"
-                                          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                                          title="Username must be two words separated by space." />
+                <div>
+                  <h2 class="form__title">Leave your data in form</h2>
+                  <form name="signup_form" autocomplete="on" novalidate>
+                    <label class="form__field">
+                      <input
+                        type="text"
+                        class="form__input"
+                        name="name"
+                        placeholder=" "
+                        required
+                        minlength="3"
+                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                        title="Username must be two words separated by space."
+                      />
 
-                                          <svg class="form__icon">
-                                            <use href="/images/menu/sprite-header.svg#icon-person-black"></use>
-                                          </svg>
-                                          <span class="form__label">Name</span>
-                                      </label>
-                                      <label class="form__field">
-                                          <input
-                                          type="tel"
-                                          class="form__input"
-                                          name="tel"
-                                          placeholder=" "
-                                          required minlength="9"
-                                          pattern="[0-9]{9}"
-                                          title="Phone number must consist from 9 numbers."
-                                          />
-                                          <svg class="form__icon">
-                                            <use href="/images/menu/sprite-header.svg#icon-phone-black"></use>
-                                          </svg>
-                                          <span class="form__label" >Phone</span>
-                                      </label>
-                                      <label class="form__field">
-                                          <input
-                                          type="email"
-                                          class="form__input"
-                                          name="email"
-                                          placeholder=" "
-                                          required minlength="8"
-                                          pattern="[0-9]{9,}"
-                                          title="Phone number must consist at least from 9 numbers."/>
-                                          <svg class="form__icon">
-                                            <use href="/images/menu/sprite-header.svg#icon-email-black"></use>
-                                          </svg>
-                                          <span class="form__label">Email</span>
-                                      </label>
-                                      <label for="comment" class="comment">
-                                          <textarea class="comment__input" name="comment" rows="8" placeholder="Write text" maxlength="50" ></textarea>
-                                          <span class="comment__label">Comments</span>
-                                      </label>
-                                         <label class="checkbox">
-                                          <input type="checkbox" name="conditions" value="policy" class="checkbox__visually-hidden">
-                                          <svg width="16px" height="15px" class="checkbox__icon">
-                                              <use href="/images/menu/sprite-header.svg#icon-checkmark"></use>
-                                          </svg>
-                                          <span class="checkbox__label">Oświadczam iż akceptuję <a href="" class="checkbox__link">Regulamin</a> i <a href="" class="checkbox__link">Politykę Prywatności.</a></span>
-                                      </label>
-                                    </form>
-                                  <button type="submit" class="form__submit" data-close-modal="">Submit</button>
-                              </div>
-                          </div>
-                      </div>
-                      <ul class="menu-container__pages">
-                          <li class="menu-container__element"><a href="./index.html" class="menu-container__link">Home</a></li>
-                          <li class="menu-container__element"><a href="#" class="menu-container__link">About us</a></li>
-                          <li class="menu-container__element"><a href="#how-its-made" class="menu-container__link">How it's made?</a></li>
-                          <li class="menu-container__element"><a href="#products" class="menu-container__link">Our products</a></li>
-                          <li class="menu-container__element"><a href="#contacts" class="menu-container__link">Contact</a></li>
-                      </ul>
-                  </div>
+                      <svg class="form__icon">
+                        <use href="/images/menu/sprite-header.svg#icon-person-black"></use>
+                      </svg>
+                      <span class="form__label">Name</span>
+                    </label>
+                    <label class="form__field">
+                      <input
+                        type="tel"
+                        class="form__input"
+                        name="tel"
+                        placeholder=" "
+                        required
+                        minlength="9"
+                        pattern="[0-9]{9}"
+                        title="Phone number must consist from 9 numbers."
+                      />
+                      <svg class="form__icon">
+                        <use href="/images/menu/sprite-header.svg#icon-phone-black"></use>
+                      </svg>
+                      <span class="form__label">Phone</span>
+                    </label>
+                    <label class="form__field">
+                      <input
+                        type="email"
+                        class="form__input"
+                        name="email"
+                        placeholder=" "
+                        required
+                        minlength="8"
+                        pattern="[0-9]{9,}"
+                        title="Phone number must consist at least from 9 numbers."
+                      />
+                      <svg class="form__icon">
+                        <use href="/images/menu/sprite-header.svg#icon-email-black"></use>
+                      </svg>
+                      <span class="form__label">Email</span>
+                    </label>
+                    <label for="comment" class="comment">
+                      <textarea
+                        class="comment__input"
+                        name="comment"
+                        rows="8"
+                        placeholder="Write text"
+                        maxlength="50"
+                      ></textarea>
+                      <span class="comment__label">Comments</span>
+                    </label>
+                    <label class="checkbox">
+                      <input
+                        type="checkbox"
+                        name="conditions"
+                        value="policy"
+                        class="checkbox__visually-hidden"
+                      />
+                      <svg width="16px" height="15px" class="checkbox__icon">
+                        <use href="/images/menu/sprite-header.svg#icon-checkmark"></use>
+                      </svg>
+                      <span class="checkbox__label"
+                        >Oświadczam iż akceptuję <a href="" class="checkbox__link">Regulamin</a> i
+                        <a href="" class="checkbox__link">Politykę Prywatności.</a></span
+                      >
+                    </label>
+                  </form>
+                  <button type="submit" class="form__submit" data-close-modal="">Submit</button>
+                </div>
               </div>
-              <button type="submit" class="menu-container__button tablet"
-              aria-expanded="false"
-              aria-controls="modal-container">
-                  Buy now
-                  <svg width="5.2px" height="8px" class="menu-container__button--accessory">
-                      <use href="/images/menu/sprite-header.svg#icon-vector"></use>
-                  </svg>
-              </button>
             </div>
-          </nav>
-      </div>
-      <div class="hero-container">
-          <div class="hero-container__naming animation-left">
-              <h1 class="hero-container__title">ice cream made with <span class="hero-container__title--accent">passion</span></h1>
-              <a href="#" class="hero-container__button">Products</a>
-              <a href="#how-its-made-main" class="hero-container__button-2">How it's made?</a>
+            <ul class="menu-container__pages">
+              <li class="menu-container__element">
+                <a href="./index.html" class="menu-container__link">Home</a>
+              </li>
+              <li class="menu-container__element">
+                <a href="#" class="menu-container__link">About us</a>
+              </li>
+              <li class="menu-container__element">
+                <a href="#how-its-made" class="menu-container__link">How it's made?</a>
+              </li>
+              <li class="menu-container__element">
+                <a href="#products" class="menu-container__link">Our products</a>
+              </li>
+              <li class="menu-container__element">
+                <a href="#contacts" class="menu-container__link">Contact</a>
+              </li>
+            </ul>
           </div>
-          <span class="hero-container__bg animation-center"></span>
-          <span class="hero-container__svg animation-center"></span>
-          <div class="hero-container__number-images animation-right">
-            <img
-              srcset="/images/ice-cream/ice-cream-cafe2x.png"
-              width="43"
-              height="44"
-              alt="cafe-number"
-              sizes="100vw"
-              src="/images/ice-cream/ice-cream-cafe.png" class="number-image__element_1">
+        </div>
+        <button
+          type="submit"
+          class="menu-container__button tablet"
+          aria-expanded="false"
+          aria-controls="modal-container"
+        >
+          Buy now
+          <svg width="5.2px" height="8px" class="menu-container__button--accessory">
+            <use href="/images/menu/sprite-header.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="hero-container">
+    <div class="hero-container__naming animation-left">
+      <h1 class="hero-container__title">
+        ice cream made with <span class="hero-container__title--accent">passion</span>
+      </h1>
+      <a href="#products" class="hero-container__button">Products</a>
+      <a href="#how-its-made-main" class="hero-container__button-2">How it's made?</a>
+    </div>
+    <span class="hero-container__bg animation-center"></span>
+    <span class="hero-container__svg animation-center"></span>
+    <div class="hero-container__number-images animation-right">
+      <img
+        srcset="/images/ice-cream/ice-cream-cafe2x.png"
+        width="43"
+        height="44"
+        alt="cafe-number"
+        sizes="100vw"
+        src="/images/ice-cream/ice-cream-cafe.png"
+        class="number-image__element_1"
+      />
 
-              <img
-              srcset="/images/ice-cream/ice-cream-truck2x.png"
-              width="53"
-              height="43"
-              alt="trucks-number"
-              sizes="100vw"
-              <!-- src="/images/ice-cream/ice-cream-truck.png" class="number-image__element_2">
-          </div>
-          <img
-          srcset="/images/ice-cream/ice-cream-lady2x.png"
-          width="168"
-          height="133"
-          alt="lady with ice-cream"
-          sizes="100vw"
-          src="images/ice-cream/ice-cream-lady.png" width="168" height="133" class="hero-container__lady-picture animation-right">
-          <div class="hero-container__description animation-left">
-              <img
-              srcset="/images/ice-cream/ice-cream-milkX2.png"
-              width="124"
-              height="126"
-              alt="milk in caraffe"
-              sizes="100vw"
-              src="images/ice-cream/ice-cream-milk.png" class="hero-container__description-picture">
-              <div class="hero-container__description-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                  <svg class="hero-container__description-svg">
-                      <use href="/images/menu/sprite-header.svg#arrow-right"></use>
-                  </svg>
-              </div>
-          </div>
+      <img
+        srcset="/images/ice-cream/ice-cream-truck2x.png"
+        width="53"
+        height="43"
+        alt="trucks-number"
+        sizes="100vw"
+        <!--
+        src="/images/ice-cream/ice-cream-truck.png"
+        class="number-image__element_2"
+      />
+    </div>
+    <img
+      srcset="/images/ice-cream/ice-cream-lady2x.png"
+      width="168"
+      height="133"
+      alt="lady with ice-cream"
+      sizes="100vw"
+      src="images/ice-cream/ice-cream-lady.png"
+      width="168"
+      height="133"
+      class="hero-container__lady-picture animation-right"
+    />
+    <div class="hero-container__description animation-left">
+      <img
+        srcset="/images/ice-cream/ice-cream-milkX2.png"
+        width="124"
+        height="126"
+        alt="milk in caraffe"
+        sizes="100vw"
+        src="images/ice-cream/ice-cream-milk.png"
+        class="hero-container__description-picture"
+      />
+      <div class="hero-container__description-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <svg class="hero-container__description-svg">
+          <use href="/images/menu/sprite-header.svg#arrow-right"></use>
+        </svg>
       </div>
+    </div>
+  </div>
 </header>
-
-
