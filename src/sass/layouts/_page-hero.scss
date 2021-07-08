@@ -1,7 +1,7 @@
 .hero-container {
   @extend %container;
   position: relative;
-  background-color: getColor("primary-bg");
+  background-color: getColor('primary-bg');
   padding-top: 137px;
   padding-bottom: 160px;
   text-align: left;
@@ -11,14 +11,14 @@
   z-index: 0;
 
   @media screen and (min-width: $tablet) {
-      padding-top: 0px;
-      margin-top: 100px;
-      overflow: visible;
+    padding-top: 0px;
+    margin-top: 100px;
+    overflow: visible;
   }
 
   @media screen and (min-width: $desktop) {
-      padding-top: 84px;
-      padding-bottom: 281px;
+    padding-top: 84px;
+    padding-bottom: 281px;
   }
 
   .menu-button.is-open ~ & {
@@ -26,222 +26,219 @@
   }
 
   &__naming {
-      @media screen and (min-width: $desktop) {
-          margin-left: 69px;
-      }
-
+    @media screen and (min-width: $desktop) {
+      margin-left: 69px;
+    }
   }
 
   &__title {
-      max-width: 218px;
-      margin-bottom: 19px;
+    max-width: 218px;
+    margin-bottom: 19px;
 
-      font-family: getFont("title");
-      font-size: 26px;
-      line-height: 1.15;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+    font-family: getFont('title');
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-      color: getColor("main");
+    color: getColor('main');
+
+    @media screen and (min-width: $tablet) {
+      max-width: 160px;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 38px;
+      max-width: 277px;
+      margin-bottom: 25px;
+    }
+
+    &--accent {
+      font-size: 48px;
+      line-height: 0.905;
+
+      color: getColor('accent');
 
       @media screen and (min-width: $tablet) {
-          max-width: 160px;
-          font-size: 22px;
-          margin-bottom: 20px;
+        font-size: 34px;
       }
 
       @media screen and (min-width: $desktop) {
-          font-size: 38px;
-          max-width: 277px;
-          margin-bottom: 25px;
+        font-size: 58px;
       }
-
-      &--accent {
-          font-size: 48px;
-          line-height: 0.905;
-
-          color: getColor("accent");
-
-          @media screen and (min-width: $tablet) {
-              font-size: 34px;
-          }
-
-          @media screen and (min-width: $desktop) {
-              font-size: 58px;
-          }
-      }
+    }
   }
 
   &__bg {
-      position: absolute;
-      top: 34px;
+    position: absolute;
+    top: 34px;
 
-      width: 171px;
-      height: 410px;
-      background-image: url("../images/ice-cream/ice-cream-picture.png");
-      z-index: -1;
+    width: 171px;
+    height: 410px;
+    background-image: url('../images/ice-cream/ice-cream-picture.png');
+    z-index: -1;
+
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/ice-cream/ice-cream-picture2x.png');
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: $tablet) {
+      top: -35px;
+      left: 344px;
+
+      width: 143px;
+      height: 336px;
 
       background-size: contain;
+    }
 
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-          background-image: url('../images/ice-cream/ice-cream-picture2x.png');
-      }
-
-      @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      @media screen and (min-width: $tablet) {
-          top: -35px;
-          left: 344px;
-
-          width: 143px;
-          height: 336px;
-
-          background-size: contain;
-      }
-
-      @media screen and (min-width: $desktop) {
-          left: 548px;
-          top: 21px;
-          width: 236px;
-          height: 557px;
-      }
+    @media screen and (min-width: $desktop) {
+      left: 548px;
+      top: 21px;
+      width: 236px;
+      height: 557px;
+    }
   }
 
   &__svg {
-      position: absolute;
-      top: 22px;
-      left: 36px;
+    position: absolute;
+    top: 22px;
+    left: 36px;
 
-      width: 346px;
-      height: 344px;
+    width: 346px;
+    height: 344px;
 
-      z-index: -2;
-      background-image: url("../images/hero-svg/ellipse.svg");
+    z-index: -2;
+    background-image: url('../images/hero-svg/ellipse.svg');
 
-      @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-      }
+    @media screen and (min-width: $mobile) and (max-width: calc(#{$tablet} - 1px)) {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
 
-      @media screen and (min-width: $tablet) {
-          top: -58px;
-          left: 273px;
+    @media screen and (min-width: $tablet) {
+      top: -58px;
+      left: 273px;
 
-          width: 324px;
-          height: 322px;
+      width: 324px;
+      height: 322px;
 
-          background-image: url("../images/hero-svg/ellipse-tablet.svg");
-      }
+      background-image: url('../images/hero-svg/ellipse-tablet.svg');
+    }
 
-      @media screen and (min-width: $desktop) {
-          left: 429px;
-          top: -40px;
-          width: 538px;
-          height: 538px;
-          background-size: cover;
-      }
+    @media screen and (min-width: $desktop) {
+      left: 429px;
+      top: -40px;
+      width: 538px;
+      height: 538px;
+      background-size: cover;
+    }
   }
 
   &__number-images {
-      @media screen and (max-width: calc(#{$tablet} - 1px)) {
-          display: none;
-      }
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+      display: none;
+    }
 
-      @media screen and (min-width: $tablet) {
-          position: absolute;
-          right: 34px;
-          top: 4px;
-      }
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      right: 34px;
+      top: 4px;
+    }
 
-      @media screen and (min-width: $desktop) {
-          top: 66px;
-          right: 51px;
-      }
+    @media screen and (min-width: $desktop) {
+      top: 66px;
+      right: 51px;
+    }
   }
 
   &__lady-picture {
-      @media screen and (max-width: calc(#{$tablet} - 1px)) {
-          display: none;
-      }
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+      display: none;
+    }
 
-      @media screen and (min-width: $tablet) {
-          position: absolute;
-          right: 34px;
-          bottom: 0px;
-          width: 168px;
-      }
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      right: 34px;
+      bottom: 0px;
+      width: 168px;
+    }
 
-      @media screen and (min-width: $desktop) {
-          width: 293px;
-      }
+    @media screen and (min-width: $desktop) {
+      width: 293px;
+    }
   }
 
   &__description {
-      @media screen and (max-width: calc(#{$tablet} - 1px)) {
-          display: none;
-      }
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+      display: none;
+    }
 
-      position: absolute;
-      left: 34px;
-      bottom: 28px;
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
 
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+      left: 38px;
+      bottom: 90px;
+    }
+
+    &-picture {
+      width: 124px;
+      height: 126px;
 
       @media screen and (min-width: $desktop) {
-          left: 31px;
-          bottom: 45px;
+        width: 188px;
+        height: 191px;
       }
+    }
 
-      &-picture {
-          width: 124px;
-          height: 126px;
+    &-text {
+      font-size: 7px;
+      line-height: 1.5;
+      color: getColor('main');
+      max-width: 114px;
+      margin-left: -2px;
+      margin-top: 36px;
+      text-align: left;
 
-          @media screen and (min-width: $desktop) {
-              width: 188px;
-              height: 191px;
-          }
+      @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-left: 30px;
+        max-width: 200px;
+        margin-top: 54px;
       }
+    }
 
-      &-text {
-          font-size: 7px;
-          line-height: 1.5;
-          color: getColor("main");
-          max-width: 114px;
-          margin-left: -2px;
-          margin-top: 36px;
-          text-align: left;
+    &-svg {
+      width: 18px;
+      height: 18px;
+      margin-top: 7px;
+      background-image: url('../images/hero-svg/arrow-right.svg');
 
-          @media screen and (min-width: $desktop) {
-              font-size: 14px;
-              line-height: 1.4;
-              margin-left: 30px;
-              max-width: 200px;
-              margin-top: 54px;
-          }
+      @media screen and (min-width: $desktop) {
+        width: 26px;
+        height: 26px;
+        background-size: cover;
+        margin-top: 20px;
       }
-
-      &-svg {
-          width: 18px;
-          height: 18px;
-          margin-top: 7px;
-          background-image: url("../images/hero-svg/arrow-right.svg");
-
-          @media screen and (min-width: $desktop) {
-              width: 26px;
-              height: 26px;
-              background-size: cover;
-              margin-top: 20px;
-          }
-      }
+    }
   }
 }
 
@@ -250,26 +247,26 @@
   margin-left: 8px;
 
   @media screen and (min-width: $tablet) {
-      width: 43px;
+    width: 43px;
   }
 
   @media screen and (min-width: $desktop) {
-      margin-bottom: 15px;
-      margin-left: 20px;
-      width: 72px;
-      height: 77px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 72px;
+    height: 77px;
   }
 }
 
 .number-image__element_2 {
-    @media screen and (min-width: $tablet) {
-        width: 53px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 53px;
+  }
 
-    @media screen and (min-width: $desktop) {
-      width: 92px;
-      height: 76px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 92px;
+    height: 76px;
+  }
 }
 
 .animation-right {
