@@ -1,20 +1,18 @@
+const refs = {
+  openModalBtn: document.querySelector('[describe-open]'),
+  closeModalBtn: document.querySelector('[describe-close]'),
+  modal: document.querySelector('[describe]'),
+};
 
-  const refs = {
-    openModalBtn: document.querySelector('[describe-open]'),
-    closeModalBtn: document.querySelector('[describe-close]'),
-    modal: document.querySelector('[describe]'),
-  };
+refs.openModalBtn.addEventListener('click', toggleModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+refs.modal.addEventListener('click', logModalClick);
 
-  refs.modal.addEventListener("click", logModalClick);
+function toggleModal() {
+  refs.modal.classList.toggle('is-hidden');
+}
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-
-  function logModalClick() {
-    console.log("Это клик в бекдроп");
-  }
-
+function logModalClick() {
+  console.log('Это клик в бекдроп');
+}

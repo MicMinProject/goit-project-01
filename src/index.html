@@ -3,40 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <title>Ice-Cream Passion</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" type="image/png" href="./images/website-icon.png"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/website-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
 
     <!-- SECTION HEADER -->
-    <include src="./partials/header.html"></include>    <!
+    <include src="./partials/header.html"></include>
+    <!
     -- END SECTION HEADER -->
     <main>
-    <!-- SECTION PRODUCTS -->
-    <include src="./partials/products.html"></include>
-    <!-- END SECTION PRODUCTS -->
+      <!-- SECTION PRODUCTS -->
+      <include src="./partials/products.html"></include>
+      <!-- END SECTION PRODUCTS -->
 
-    <!-- SECTION HOW-ITS-MADE -->
-    <include src="./partials/how-its-made.html"></include>
-    <!-- END SECTION HOW-ITS-MADE -->
+      <!-- SECTION HOW-ITS-MADE -->
+      <include src="./partials/how-its-made.html"></include>
+      <!-- END SECTION HOW-ITS-MADE -->
 
-    <!-- SECTION COMMENTS -->
-    <include src="./partials/comments.html"></include>
-    <!-- END SECTION COMMENTS -->
+      <!-- SECTION COMMENTS -->
+      <include src="./partials/comments.html"></include>
+      <!-- END SECTION COMMENTS -->
 
-    <!-- SECTION PLACEMENT -->
-    <include src="./partials/placement.html"></include>
-    <!-- END SECTION PLACEMENT -->
+      <!-- SECTION PLACEMENT -->
+      <include src="./partials/placement.html"></include>
+      <!-- END SECTION PLACEMENT -->
     </main>
     <!-- SECTION FOOTER -->
 
@@ -48,14 +51,14 @@
 
     <!-- SCRIPTS -->
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <script src="./index.js"></script>
-    <script src="./mobile-menu.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./describe.js"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./mobile-menu.js" type="module"></script>
+    <script src="./modal.js" type="module"></script>
+    <script src="./describe.js" type="module"></script>
     <script>
       window.onload = function () {
-      document.body.classList.add('loaded');
-      }
+        document.body.classList.add('loaded');
+      };
     </script>
     <!-- END SCRIPTS -->
   </body>
