@@ -1,83 +1,98 @@
-        <!--Products-->
-        <section class="section" id="products">
-            <div class="container products">
-                <p class="label">100% natural</p>
-                <h2 class="products__title">PRODUCTS</h2>
-                <ul class="products__list">
-                    <li class="products__list-item products__list-item--ice-cream">
-                        <img class="products__list-img"
-                        src="/images/products/mobile/ice-cream.png"
-                        srcset="/images/products/mobile/ice-cream@2x.png"
-                        alt="Photo: John Doe"/>
-                        <h3 class="products__list-title">ice cream</h3>
-                        <div class="ellipse">
-                          <ul class="ellipse__list circle--margin">
-                              <li class="ellipse__list-item"></li>
-                              <li class="ellipse__list-item"></li>
-                              <li class="ellipse__list-item"></li>
-                          </ul>
-                        </div>
-                        <p class="products__list-describe">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
-                        </p>
-                        <button type="button" class="products__list-link" describe-open></button>
-                    </li>
-                    <li class="products__list-item products__list-item--coffee">
-                      <img
-                          class="products__list-img"
-                          src="/images/products/mobile/ice-cream.png"
-                          srcset=/images/products/mobile/coffee@2x.png 2x"
-                          alt="Photo: John Doe"/>
-                      <h3 class="products__list-title">ice coffee</h3>
-                        <div class="ellipse">
-                          <ul class="ellipse__list circle--margin">
-                              <li class="ellipse__list-item"></li>
-                              <li class="ellipse__list-item"></li>
-                              <li class="ellipse__list-item"></li>
-                          </ul>
-                        </div>
-                        <p class="products__list-describe">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et. dolore
-                            magna
-                            aliqua facilisis.
-                        </p>
-                        <button type="button" class="products__list-link" describe-open></button>
-                    </li>
-                    <li class="products__list-item  products__list-item--milkshakes">
-                      <img
-                      class="products__list-img"
-                      src="/images/products/mobile/milkshakes.png"
-                      srcset="/images/products/mobile/milkshakes@2x.png 2x"
-                      alt="Photo: John Doe"/>
-                      <h3 class="products__list-title">milkshakes</h3>
-                        <div class="ellipse">
-                          <ul class="ellipse__list circle--margin">
-                            <li class="ellipse__list-item"></li>
-                            <li class="ellipse__list-item"></li>
-                            <li class="ellipse__list-item"></li>
-                          </ul>
-                        </div>
-                        <p class="products__list-describe">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et. dolore
-                            magna
-                            aliqua facilisis.
-                        </p>
-                        <button type="button" class="products__list-link" describe-open></button>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <div class="modal is-hidden" describe>
-            <div class="describe">
-                <button type="button" class="close-btn" describe-close>
-                    <svg class="close-icon" width="11" height="11">
-                        <use href="/images/products/modal/close.svg#icon-Vector">
-                        </use>
-                    </svg>
-                </button>
-                <p>Describe</p>
-            </div>
+<!--Products-->
+<section class="section" id="products">
+  <div class="container products">
+    <p class="label">100% natural</p>
+    <h2 class="products__title">PRODUCTS</h2>
+    <ul class="products__list">
+      <li class="products__list-item products__list-item--ice-cream">
+        <img
+          class="products__list-img"
+          src="/images/products/mobile/ice-cream.png"
+          srcset="/images/products/mobile/ice-cream@2x.png"
+          alt="Photo: John Doe"
+        />
+        <h3 class="products__list-title">ice cream</h3>
+        <div class="ellipse">
+          <ul class="ellipse__list circle--margin">
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+          </ul>
         </div>
-
+        <p class="products__list-describe">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="products__list-link" describe-open></button>
+        <div class="modal is-hidden" describe>
+          <div class="describe describe--ice-cream">
+            <button type="button" class="close-btn" describe-close>
+              <svg class="close-icon" width="18" height="18">
+                <use href="/images/products/modal/close.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <p class="modal__description">Description</p>
+          </div>
+        </div>
+      </li>
+      <li class="products__list-item products__list-item--coffee">
+        <img class="products__list-img" src="/images/products/mobile/ice-cream.png"
+        srcset=/images/products/mobile/coffee@2x.png 2x" alt="Photo: John Doe"/>
+        <h3 class="products__list-title">ice coffee</h3>
+        <div class="ellipse">
+          <ul class="ellipse__list circle--margin">
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+          </ul>
+        </div>
+        <p class="products__list-describe">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="products__list-link"></button>
+        <div class="modalsecond is-hidden">
+          <div class="describe describe--coffee">
+            <button type="button" class="close-btn">
+              <svg class="close-icon" width="18" height="18">
+                <use href="/images/products/modal/close.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <p class="modal__description">Description</p>
+          </div>
+        </div>
+      </li>
+      <li class="products__list-item products__list-item--milkshakes">
+        <img
+          class="products__list-img"
+          src="/images/products/mobile/milkshakes.png"
+          srcset="/images/products/mobile/milkshakes@2x.png 2x"
+          alt="Photo: John Doe"
+        />
+        <h3 class="products__list-title">milkshakes</h3>
+        <div class="ellipse">
+          <ul class="ellipse__list circle--margin">
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+            <li class="ellipse__list-item"></li>
+          </ul>
+        </div>
+        <p class="products__list-describe">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="products__list-link" describe-open></button>
+        <div class="modal is-hidden" describe>
+          <div class="describe describe--milkshakes">
+            <button type="button" class="close-btn" describe-close>
+              <svg class="close-icon" width="18" height="18">
+                <use href="/images/products/modal/close.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <p class="modal__description">Description</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
